@@ -1,0 +1,50 @@
+// Place all the styles related to the Emails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+
+.list{
+  //border: 1px solid red;
+  height: 400px;
+  border-radius: 5px;
+}
+
+.content{
+  //border: 1px solid blue;
+  //height: 400px;
+
+}
+
+.email{
+  border-bottom: 1px solid grey; //-bottom
+  height: 70px;
+  color: black;
+  //font-weight: bold;
+  background-color: #E8E8E8;
+
+  a:active{
+    background-color: #E3E3E3;
+  }
+}
+
+.center{
+  //padding-top: 5px;//vertical-align: center;
+}
+
+.test{
+  background-color: yellow;
+}
+
+a:link{
+  color: black;
+  text-decoration: none;
+}
+
+#show-email{
+  background-color: white;
+}
+
+.unread{
+  font-weight: bold;
+}
