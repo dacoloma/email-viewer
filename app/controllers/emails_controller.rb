@@ -4,6 +4,10 @@ class EmailsController < ApplicationController
 
   def index
     @emails=Email.all
+    @emails.each do |email|
+      p email.opened
+      p "======="
+    end
   end
 
   def new
@@ -16,6 +20,9 @@ class EmailsController < ApplicationController
 
   def show
     @email = Email.find(params[:id])
+    p "================"
+    @email.update(opened: true)
+    p @email[:opened]
   end
 
   def destroy

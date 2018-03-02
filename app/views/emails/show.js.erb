@@ -1,1 +1,6 @@
-$("#show-email").html("<%= j render(partial: 'show') %>");
+$('.show').bind('ajax:success', function() {
+   $(".show-email").html("<%= j render(partial: 'show') %>");
+   //console.log($('.show'))
+   
+
+});

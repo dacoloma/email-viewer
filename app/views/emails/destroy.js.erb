@@ -1,3 +1,5 @@
 $('.delete-email').bind('ajax:success', function() {
    $(this).closest('.email').fadeOut();
+   $('.show-email').fadeOut();
+   $(".show-email").html("<%= j render(partial: 'show') %>");
 });
